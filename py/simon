@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import colors as c
+from random import randint
+
+def pick():
+    return randint(1,4)
+
+def pick_colored():
+    num = pick()
+    if num == 1:
+        return str(c.red + num)
+    elif num == 2:
+        return str(c.blue + num)
+    elif num == 3:
+        return str(c.green + num)
+    elif num == 4:
+        return str(c.yellow + num)
+    
+        
+
+if __name__ == '__main__':
+    print(c.clear + c.multi("Welcome to Simon") + c.x)
+    print(pick_colored())
+    print(num)
