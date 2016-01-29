@@ -2,24 +2,36 @@
 
 import colors as c
 from random import randint
+import time
+
+numbers =[]
+    
 
 def pick():
     return randint(1,4)
 
 def pick_colored():
     num = pick()
-    if num == 1:
-        return str(c.red + num)
-    elif num == 2:
-        return str(c.blue + num)
-    elif num == 3:
-        return str(c.green + num)
-    elif num == 4:
-        return str(c.yellow + num)
     
         
 
 if __name__ == '__main__':
+    
     print(c.clear + c.multi("Welcome to Simon") + c.x)
-    print(pick_colored())
-    print(num)
+    print(c.orange + '(Press The Enter Key To Begin Kind Sir)')
+    input()
+    while True:
+        current  = pick()
+        numbers.append(current)
+        print(numbers)
+        time.sleep(2)
+        print(c.clear)
+        order = input("Simon Says Enter Number> ")
+        answer = []
+        for n in order:
+            answer.append(int(n))
+        if answer == numbers:
+            print("Yes")
+        else:
+            print("You Fedora Wearing Scrublord")
+            break
