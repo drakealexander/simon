@@ -1,2 +1,2 @@
 # simon
-The matching game you play maybe
+MAKE SURE NUMBERS ARE CONNECTED LIKE (12), NOT (1 2)
