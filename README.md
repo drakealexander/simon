@@ -1,2 +1,28 @@
-# simon
-MAKE SURE NUMBERS ARE CONNECTED LIKE (12), NOT (1 2)
+Make sure numbers are connected and not like this(1 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
